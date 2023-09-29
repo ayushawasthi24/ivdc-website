@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../../components/card";
-import { TeamMembers } from "./TeamMembers";
+import { TeamMembers } from "../../components/TeamMembers";
 import Navbar from "../../components/navbar";
 
 const teamspage = () => {
