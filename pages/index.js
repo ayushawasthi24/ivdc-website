@@ -55,10 +55,10 @@ const Home = () => {
         ></SectionTitle>
         <Events />
       </div>
-      <div id="Team">
+      {/* <div id="Team">
         <SectionTitle id="Team" pretitle="Team" title="Our Team"></SectionTitle>
         <Team />
-      </div>
+      </div> */}
       <Footer />
       <PopupWidget />
     </>

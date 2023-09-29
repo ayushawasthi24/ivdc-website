@@ -10,7 +10,6 @@ import {
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../public/img/one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
   title: "We majorly work on",
@@ -40,36 +39,20 @@ const benefitOne = {
   ],
 };
 
-const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
-  bullets: [
-    {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
-    },
-  ],
-};
-
 const projects = [
   {
-    title:"Project 1",
+    title: "Autonomous EV",
+    desc: "Autonomous Electric Campus Vehicle - IIT Indore.",
+    link: "Ongoing",
+    people: "",
   },
   {
-    title: "Project 2",
-  }, 
+    title: "Drona Aviation Pluto Swarm Challenge",
+    desc: "Inter-IIT Tech Meet 11.0: Bronze medal winning solution to Drona Aviation's Pluto Drone Swarm Challenge",
+    link: "https://github.com/DaemonLab/Drone-Swarm-InterIIT-2023",
+    people:
+      "Yeeshukant Singh, Kshitij Bhat, Harsh Bardhan, Rohan Jha, Sairaj Loke, Akshit Raizada, Omkar Shirgaonkar, Shivankar Sharma, Abhishek Nair and Karandevsinh Khuman",
+  },
 ];
 
-export { benefitOne, benefitTwo, projects };
+export { benefitOne, projects };

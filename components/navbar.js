@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigation = ["Home", "Projects", "Achievements", "Team", "Contact Us"];
 
   return (
-    <div className="mx-2 px-7 sticky top-1 backdrop-filter backdrop-blur-lg bg-opacity-1 border-2 border-gray-500 rounded-xl shadow-xl">
+    <div className="z-10 mx-2 px-7 sticky top-1 backdrop-filter backdrop-blur-lg bg-opacity-1 border-2 border-gray-500 rounded-xl shadow-xl">
       <nav className="flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
@@ -79,6 +79,7 @@ const Navbar = () => {
             <li className="mr-3 nav__item" key="1">
               <Link
                 href="/"
+                scroll={false}
                 className="smoothscroll inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
               >
                 Home
@@ -86,7 +87,7 @@ const Navbar = () => {
             </li>
             <li className="mr-3 nav__item" key="2">
               <Link
-                href="#Projects"
+                href="/#Projects"
                 scroll={false}
                 className="scroll-smooth inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
               >
@@ -95,7 +96,7 @@ const Navbar = () => {
             </li>
             <li className="mr-3 nav__item" key="3">
               <Link
-                href="#Events"
+                href="/#Events"
                 scroll={false}
                 className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
               >
@@ -104,8 +105,7 @@ const Navbar = () => {
             </li>
             <li className="mr-3 nav__item" key="4">
               <Link
-                href="#Team"
-                scroll={false}
+                href="/team"
                 className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
               >
                 Team

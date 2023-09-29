@@ -18,12 +18,7 @@ function Avatar(props) {
   return (
     <div className="flex items-center my-auto space-x-3">
       <div className="flex-shrink-0 overflow-hidden rounded-full w-10 h-10">
-        <Image
-          src={props.image}
-          width="40"
-          height="40"
-          alt="Avatar"
-        />
+        <Image src={props.image} width="40" height="40" alt="Avatar" />
       </div>
       <div>
         <div className="text-lg font-medium">{props.name}</div>
@@ -37,7 +32,6 @@ function Card(props) {
     <>
       <div className="lg:col-span-2 xl:col-auto m-2 p-2">
         <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-
           <Avatar
             image={props.img}
             name={props.name}
@@ -48,5 +42,16 @@ function Card(props) {
     </>
   );
 }
+
+const team = [
+  {
+    id : 1,
+    name : "",
+    img: "",
+    linkedin: "",
+    github: "",
+    
+  }
+];
 
 export default Team;

@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import userOneImg from "../public/img/user1.jpg";
-import userTwoImg from "../public/img/user2.jpg";
-import userThreeImg from "../public/img/user3.jpg";
+import { ArrowRightOnRectangleIcon } from "@heroicons/react/24/solid";
 
 const Testimonials = (props) => {
   const { data } = props;
@@ -99,8 +97,22 @@ function Card(props) {
   return (
     <>
       <div className="lg:col-span-2 xl:col-auto m-2 p-2">
-        <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-          <p className="text-2xl leading-normal ">{props.item.title}</p>
+        <div className="flex flex-col justify-between h-60 w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
+          <p className="text-2xl leading-normal ">
+            <Mark>{props.item.title}</Mark>
+          </p>
+          <p>{props.item.desc}</p>
+          {props.item.link != "Ongoing" && (
+            <a href={props.item.link} target="_blank">
+              <ArrowRightOnRectangleIcon className="h-5 w-5" />
+            </a>
+          )}
+          {props.item.link == "Ongoing" && (
+            <a href="#">
+              Ongoing
+            </a>
+          )}
+          <p>{props.item.people}</p>
         </div>
       </div>
     </>
