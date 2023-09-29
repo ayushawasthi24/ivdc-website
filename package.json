@@ -1,5 +1,5 @@
 {
-  "name": "IVDC Club",
+  "name": "ivdc-website",
   "version": "0.1.0",
   "description": "IVDC Club Website",
   "private": true,
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gituhb.com/web3templates/nextly-template"
+    "url": "https://github.com/ayushawasthi24/ivdc-website"
   },
   "keywords": [
     "nextjs",
