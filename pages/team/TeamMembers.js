@@ -1,4 +1,4 @@
-export const TeamMembers = [
+const TeamMembers = [
   {
     id: "1",
     name: "Dr. Devendra Deshmukh ",
@@ -336,3 +336,5 @@ export const TeamMembers = [
     github: " ",
   },
 ];
+
+export { TeamMembers };
