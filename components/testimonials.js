@@ -8,7 +8,7 @@ const Testimonials = (props) => {
   const data2 = Object.values(data);
   return (
     <Container>
-      <div className="flex flex-wrap justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center mx-2 px-1">
         {/* <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
@@ -96,8 +96,8 @@ function Mark(props) {
 function Card(props) {
   return (
     <>
-      <div className="lg:col-span-2 xl:col-auto m-2 p-2">
-        <div className="flex flex-col justify-between h-60 w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
+      <div className="m-2 p-2 lg:col-span-2 xl:col-auto ">
+        <div className="ml-4 flex flex-col justify-between max-h-60 max-w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
           <p className="text-2xl leading-normal ">
             <Mark>{props.item.title}</Mark>
           </p>
@@ -107,11 +107,7 @@ function Card(props) {
               <ArrowRightOnRectangleIcon className="h-5 w-5" />
             </a>
           )}
-          {props.item.link == "Ongoing" && (
-            <a href="#">
-              Ongoing
-            </a>
-          )}
+          {props.item.link == "Ongoing" && <a href="#">Ongoing</a>}
           <p>{props.item.people}</p>
         </div>
       </div>

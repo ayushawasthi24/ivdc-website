@@ -26,7 +26,7 @@ function Card(props) {
   return (
     <>
       <div className="lg:col-span-2 xl:col-auto m-2 p-2">
-        <div className="flex flex-col justify-between h-60 w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
+        <div className="ml-4 flex flex-col justify-between max-h-60 max-w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
           <p className="text-2xl leading-normal ">
             <Mark>{props.item.title}</Mark>
           </p>
