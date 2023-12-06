@@ -8,8 +8,12 @@ import {
   SignalIcon,
   CogIcon,
 } from "@heroicons/react/24/solid";
-
+import AutonomousEV from "../public/img/EV_Brain.jpg";
+import Drone from "../public/img/plutoDrone.png"
 import benefitOneImg from "../public/img/one.png";
+import jlr from "../public/img/jlr.jpg";
+import jackal from "../public/img/jackal.jpeg";
+import car from "../public/img/car.gif";
 
 const benefitOne = {
   title: "We majorly work on",
@@ -45,13 +49,36 @@ const projects = [
     desc: "Autonomous Electric Campus Vehicle - IIT Indore.",
     link: "Ongoing",
     people: "",
+    img: AutonomousEV,
   },
   {
     title: "Drona Aviation Pluto Swarm Challenge",
     desc: "Inter-IIT Tech Meet 11.0: Bronze medal winning solution to Drona Aviation's Pluto Drone Swarm Challenge",
     link: "https://github.com/DaemonLab/Drone-Swarm-InterIIT-2023",
+    img: Drone,
     people:
       "Yeeshukant Singh, Kshitij Bhat, Harsh Bardhan, Rohan Jha, Sairaj Loke, Akshit Raizada, Omkar Shirgaonkar, Shivankar Sharma, Abhishek Nair and Karandevsinh Khuman",
+  },
+  {
+    title: "JLR  Robotic Charging",
+    desc: "To develop a robotic arm that can automatically detect the vehicle's charging port and plug the socket into the charging port.",
+    link: "https://github.com/AdityaGuhagarkar/JLR_Robotic_Charging",
+    people: "",
+    img: jlr,
+  },
+  {
+    title: "Autonomous Navigation for Vehicles in Rough Terrain",
+    desc: "To demonstrate how to achieve robust and efficient navigation for mobile robots in challenging terrains using MATLAB toolboxes and co-simulation with Gazebo",
+    link: "https://github.com/IVDC-Club-IIT-Indore/RoughTerrain-IVR2",
+    people: "",
+    img: jackal,
+  },
+  {
+    title: "IVDC Car ",
+    desc: "To Develop a robust lane detection pipeline that consumes meager computational resources (No GPU allowed, limited CPU and RAM usage) and could be deployed on NVIDIA Jetson Nano Board or even a Raspberry Pi board",
+    link: "https://github.com/IVDC-Club-IIT-Indore/IITISoC-23-IVR1-LaneDetection-using-LimitedComputationPower",
+    people: "",
+    img: car,
   },
 ];
 

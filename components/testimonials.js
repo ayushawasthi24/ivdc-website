@@ -97,7 +97,7 @@ function Card(props) {
   return (
     <>
       <div className="m-2 p-2 lg:col-span-2 xl:col-auto ">
-        <div className="ml-4 flex flex-col justify-between max-h-60 max-w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
+        <div className="p-5 flex flex-col justify-center items-center max-h-96 max-w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
           <p className="text-2xl leading-normal ">
             <Mark>{props.item.title}</Mark>
           </p>
@@ -107,6 +107,7 @@ function Card(props) {
               <ArrowRightOnRectangleIcon className="h-5 w-5" />
             </a>
           )}
+          <Image src={props.item.img} height={200} width={200} className="rounded-xl m-1"></Image>
           {props.item.link == "Ongoing" && <a href="#">Ongoing</a>}
           <p>{props.item.people}</p>
         </div>
