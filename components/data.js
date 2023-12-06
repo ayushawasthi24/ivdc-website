@@ -8,7 +8,7 @@ import {
   SignalIcon,
   CogIcon,
 } from "@heroicons/react/24/solid";
-import AutonomousEV from "../public/img/EV_Brain.jpg";
+import AutonomousEV from "../public/img/EV_Vehicle.jpg";
 import Drone from "../public/img/plutoDrone.png"
 import benefitOneImg from "../public/img/one.png";
 import jlr from "../public/img/jlr.jpg";

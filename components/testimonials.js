@@ -97,7 +97,7 @@ function Card(props) {
   return (
     <>
       <div className="m-2 p-2 lg:col-span-2 xl:col-auto ">
-        <div className="p-5 flex flex-col justify-center items-center max-h-96 max-w-96 overflow-x-auto bg-gray-100 px-10 rounded-2xl py-10 dark:bg-trueGray-800">
+        <div className="flex flex-col justify-center items-center lg:max-h-96 lg:max-w-96 overflow-y-scroll overflow-x-auto bg-gray-100 px-10 rounded-2xl py-12 dark:bg-trueGray-800">
           <p className="text-2xl leading-normal ">
             <Mark>{props.item.title}</Mark>
           </p>
