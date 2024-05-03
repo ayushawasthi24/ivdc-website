@@ -79,7 +79,7 @@ const projects = [
     link: "https://github.com/IVDC-Club-IIT-Indore/IITISoC-23-IVR1-LaneDetection-using-LimitedComputationPower",
     people: "",
     img: car,
-  },
+  }
 ];
 
 export { benefitOne, projects };

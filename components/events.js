@@ -58,9 +58,6 @@ const upcomingevents = [
   {
     title: "Tech Meetup with Local Colleges",
   },
-  {
-    title: "TopGear'23",
-  },
 ];
 const completedevents = [
   {
@@ -73,6 +70,10 @@ const completedevents = [
   {
     title: "Automathon'23",
   },
+  {
+    title: "TopGear'23",
+    desc: "Conducted Gesture Constrolled Car Competition, PS : Trace it Out",
+  }
 ];
 
 export default Events;
